@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: false
-tagline: 积硅步以至千里,积小流成江海
+tagline: 积硅步以至千里,积小流以成江海
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
@@ -11,12 +11,12 @@ tagline: 积硅步以至千里,积小流成江海
 #   background: '#fff',
 #   borderRadius: '1rem',
 # }
-bgImage: '/bg.png'
+bgImage: '/bg_copy.png'
 bgImageStyle: {
   height: '450px',
   # background-position: 50% 0%,
   # background-repeat: no-repeat,
-  # background-attachment: fixed,
+  background-attachment: fixed,
 }
 isShowTitleInHome: true
 actionText: Guide
