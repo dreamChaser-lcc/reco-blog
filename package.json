@@ -2,13 +2,17 @@
   "name": "blog",
   "version": "1.0.0",
   "author": "lcc",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
-    "dev": "vuepress dev . --open --host \"localhost\"",
-    "build": "vuepress build ."
+    "start": "vuepress dev docs --temp ./temp",
+    "dev": "vuepress dev docs --open --host \"localhost\"",
+    "build": "vuepress build doc"
   },
   "devDependencies": {
     "vuepress": "1.8.2",
-    "vuepress-theme-reco": "1.6.10"
+    "vuepress-theme-reco": "^1.6.6"
   },
   "description": "Personal growth and learning records"
 }

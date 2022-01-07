@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: vuepress-theme-reco
-tagline: A simple and beautiful vuepress blog theme.
+heroText: false
+tagline: 积硅步以至千里,积小流成江海
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
@@ -11,10 +11,14 @@ tagline: A simple and beautiful vuepress blog theme.
 #   background: '#fff',
 #   borderRadius: '1rem',
 # }
+bgImage: '/bg.png'
 bgImageStyle: {
-  height: '450px'
+  height: '450px',
+  # background-position: 50% 0%,
+  # background-repeat: no-repeat,
+  # background-attachment: fixed,
 }
-isShowTitleInHome: false
+isShowTitleInHome: true
 actionText: Guide
 actionLink: /views/other/guide
 features:
