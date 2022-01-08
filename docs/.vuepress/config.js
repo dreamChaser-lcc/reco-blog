@@ -1,5 +1,5 @@
 module.exports = {
-  title: "blog",
+  title: "春华秋实",
   description: "Personal growth and learning records",
   dest: "public",
   head: [
@@ -7,9 +7,10 @@ module.exports = {
       "link",
       {
         rel: "icon",
-        href: "/favicon.ico",
+        href: "/favicon_1.ico",
       },
     ],
+    // 移动端适配方案
     [
       "meta",
       {
@@ -38,6 +39,13 @@ module.exports = {
           {
             text: "vuepress-reco",
             link: "/docs/theme-reco/",
+            items: [
+              {
+                text: "TimeLine",
+                link: "/timeline/",
+                icon: "reco-date",
+              },
+            ],
           },
         ],
       },
@@ -56,7 +64,7 @@ module.exports = {
     sidebar: {
       "/docs/theme-reco/": ["theme"],
     },
-    docsDir: 'docs',
+    docsDir: "docs",
     type: "blog",
     blogConfig: {
       category: {
@@ -68,7 +76,7 @@ module.exports = {
         text: "Tag",
       },
     },
-    logo: "/logo.png",
+    logo: "/logo_brown.png",
     search: true,
     searchMaxSuggestions: 10,
     lastUpdated: "Last Updated",
