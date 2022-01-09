@@ -7,7 +7,7 @@ module.exports = {
       "link",
       {
         rel: "icon",
-        href: "/favicon_1.ico",
+        href: "/favicon.ico",
       },
     ],
     // 移动端适配方案
@@ -86,6 +86,28 @@ module.exports = {
     startYear: "2022",
     noFoundPageByTencent: false,
   },
+  plugins: [
+    [
+      "meting",
+      {
+        meting: {
+          server: "netease",
+          type: "playlist",
+          mid: "7228385774",
+          // auto: 'https://y.qq.com/n/ryqq/player'
+        },
+        aplayer: {
+          order: "random",
+          lrcType: 1,
+          listFolded: true,
+        },
+        mobile: {
+          cover: false,
+          lrc: false,
+        },
+      },
+    ],
+  ],
   markdown: {
     lineNumbers: true,
   },
