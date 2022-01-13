@@ -1,5 +1,5 @@
 module.exports = {
-  title: "春华秋实",
+  title: "myblog",
   description: "Personal growth and learning records",
   dest: "public",
   head: [
@@ -64,6 +64,7 @@ module.exports = {
     sidebar: {
       "/docs/theme-reco/": ["theme"],
     },
+    perPage:3,
     docsDir: "docs",
     type: "blog",
     blogConfig: {
@@ -88,6 +89,20 @@ module.exports = {
   },
   plugins: [
     [
+      "@vuepress-reco/vuepress-plugin-kan-ban-niang",
+      {
+        theme: ["koharu"],
+        // clean:true,
+        messages: "Hi",
+      },
+    ],
+    [
+      "pagation",
+      {
+        perpage: 3,
+      },
+    ],
+    [
       "meting",
       {
         meting: {
@@ -98,7 +113,7 @@ module.exports = {
         },
         aplayer: {
           order: "random",
-          lrcType: 1,
+          lrcType: 0,
           listFolded: true,
         },
         mobile: {
