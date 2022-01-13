@@ -2,6 +2,7 @@ module.exports = {
   title: "myblog",
   description: "Personal growth and learning records",
   dest: "public",
+  base:'/reco-blog/',
   head: [
     [
       "link",
@@ -23,15 +24,15 @@ module.exports = {
   themeConfig: {
     nav: [
       {
-        text: "Home",
+        text: "主页",
         link: "/",
         icon: "reco-home",
       },
-      {
-        text: "TimeLine",
-        link: "/timeline/",
-        icon: "reco-date",
-      },
+      // {
+      //   text: "TimeLine",
+      //   link: "/timeline/",
+      //   icon: "reco-date",
+      // },
       {
         text: "Docs",
         icon: "reco-message",
@@ -39,13 +40,6 @@ module.exports = {
           {
             text: "vuepress-reco",
             link: "/docs/theme-reco/",
-            items: [
-              {
-                text: "TimeLine",
-                link: "/timeline/",
-                icon: "reco-date",
-              },
-            ],
           },
         ],
       },
@@ -55,26 +49,26 @@ module.exports = {
         items: [
           {
             text: "GitHub",
-            link: "https://github.com/recoluan",
+            link: "https://github.com/dreamChaser-lcc",
             icon: "reco-github",
           },
         ],
       },
     ],
     sidebar: {
-      "/docs/theme-reco/": ["theme"],
+      "/docs/theme-reco/": ["theme","api",'plugin'],
     },
-    perPage:3,
+    perPage: 3,
     docsDir: "docs",
     type: "blog",
     blogConfig: {
       category: {
         location: 2,
-        text: "Category",
+        text: "分类",
       },
       tag: {
         location: 3,
-        text: "Tag",
+        text: "标签",
       },
     },
     logo: "/logo_brown.png",

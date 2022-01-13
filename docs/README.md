@@ -1,7 +1,8 @@
 ---
 home: true
 heroText: 春华秋实
-tagline: 积硅步以至千里,积小流以成江海
+tagline: 你还没有真正努力过,不该轻易输给懒惰
+# tagline: 积硅步以至千里,积小流以成江海
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
@@ -14,18 +15,9 @@ tagline: 积硅步以至千里,积小流以成江海
 bgImage: '/bg_copy.png'
 bgImageStyle: {
   height: '450px',
-  # background-position: 50% 0%,
-  # background-repeat: no-repeat,
   background-attachment: fixed,
 }
 isShowTitleInHome: true
-actionText: Guide
-actionLink: /views/other/guide
-features:
-- title: Yesterday
-  details: 开发一款看着开心、写着顺手的 vuepress 博客主题
-- title: Today
-  details: 希望帮助更多的人花更多的时间在内容创作上，而不是博客搭建上
-- title: Tomorrow
-  details: 希望更多的爱好者能够参与进来，帮助这个主题更好的成长
+# actionText: Guide
+# actionLink: /blogs/other/guide
 ---
