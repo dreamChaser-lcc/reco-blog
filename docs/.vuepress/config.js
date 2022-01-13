@@ -2,7 +2,7 @@ module.exports = {
   title: "myblog",
   description: "Personal growth and learning records",
   dest: "public",
-  base:'/reco-blog/',
+  base:'/reco-blog/docs',
   head: [
     [
       "link",
