@@ -2,7 +2,7 @@ module.exports = {
   title: "myblog",
   description: "Personal growth and learning records",
   dest: "docs/.vuepress/dist",
-  base:'/reco-blog/docs',
+  base:'/reco-blog/',
   head: [
     [
       "link",
