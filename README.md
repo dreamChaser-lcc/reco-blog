@@ -1,4 +1,4 @@
-## 个人博客
+# 个人博客
 
 ## 基本文章的格式（front matter）
 ```md
@@ -19,3 +19,7 @@ publish: false
 ---
 {content}
 ```
+
+## 特别鸣谢
+[午后南杂](https://www.recoluan.com)
+[vuepress-theme-reco官网](https://vuepress-theme-reco.recoluan.com)
