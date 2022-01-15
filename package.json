@@ -8,7 +8,7 @@
   "scripts": {
     "start": "vuepress dev docs --temp ./temp",
     "dev": "vuepress dev docs --open --host \"localhost\"",
-    "build": "vuepress build docs"
+    "docs:build": "vuepress build docs"
   },
   "devDependencies": {
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
