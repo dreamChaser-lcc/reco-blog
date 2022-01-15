@@ -22,11 +22,12 @@ module.exports={
         ],
       },
       {
-        text: "Contact",
-        icon: "reco-message",
-        items: [
-          {
-            text: "GitHub",
+        text:'给我留言吧',
+        icon:'reco-suggestion',
+        link:'/blogs/suggestion'
+      },
+      {
+        text: "GitHub",
             link: "https://github.com/dreamChaser-lcc",
             icon: "reco-github",
           },
@@ -67,7 +68,12 @@ module.exports={
         },
       ],
     },
-    perPage: 3,
+    // 留言板
+    valineConfig: {
+      appId: 'wMhYUMsTRmok697Y2P2C8XHf-gzGzoHsz',// your appId
+      appKey: 'fWcCMoqljXsTetWnzoPFGesJ', // your appKey
+      commentsSolution:'valine'
+    },
     docsDir: "docs",
     type: "blog",
     // 导航栏的默认博客配置
