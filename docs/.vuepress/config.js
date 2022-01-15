@@ -2,7 +2,7 @@ const { themeConfig } = require("./themeConfig");
 const { plugins } = require('./plugins')
 
 module.exports = {
-  title: "myblog",
+  title: "stay or life",
   description: "Personal growth and learning records",
   dest: "docs/.vuepress/dist",
   base: "/reco-blog/",

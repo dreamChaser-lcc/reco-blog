@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: 春华秋实
-tagline: 还没有真正努力过,不该轻易输给懒惰
+tagline: 没有真正努力过，不该轻易输给懒惰
 # tagline: 积硅步以至千里,积小流以成江海
 # heroImage: /hero.png
 # heroImageStyle: {

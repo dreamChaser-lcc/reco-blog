@@ -1,5 +1,6 @@
-module.exports={
+module.exports = {
   themeConfig: {
+    // 导航栏配置
     nav: [
       {
         text: "主页",
@@ -12,7 +13,7 @@ module.exports={
       //   icon: "reco-date",
       // },
       {
-        text: "Docs",
+        text: "文档",
         icon: "reco-message",
         items: [
           {
@@ -22,26 +23,26 @@ module.exports={
         ],
       },
       {
-        text:'给我留言吧',
+        text:'留言板',
         icon:'reco-suggestion',
         link:'/blogs/suggestion'
       },
       {
         text: "GitHub",
-            link: "https://github.com/dreamChaser-lcc",
-            icon: "reco-github",
-          },
-        ],
+        icon: "reco-github",
+        link: "https://github.com/dreamChaser-lcc",
       },
     ],
+    sidebar: "auto",
     subSidebar: "auto",
     sidebarDepth: 3, // 侧边栏深度，默认是2级
+    // 侧边栏配置
     sidebar: {
-      "/docs/theme-reco/": ["theme", "api", "plugin"], 
+      "/docs/theme-reco/": ["theme", "api", "plugin"],
       "/docs/vuepress/": [
         {
           title: "vuepress-reco",
-          collapsable: true,
+          collapsable: false,
           children: [
             {
               title: "项目搭建",
@@ -51,12 +52,16 @@ module.exports={
               title: "侧边栏配置",
               path: "侧边栏配置",
             },
+            {
+              title: "Markdown",
+              path: "Markdown",
+            },
             "博客部署",
           ],
         },
         {
           title: "多级侧边栏",
-          collapsable: true,
+          collapsable: false,
           children: [
             "多级侧边栏/一级侧边栏",
             {
@@ -111,4 +116,4 @@ module.exports={
     startYear: "2022",
     noFoundPageByTencent: false,
   },
-}
+};

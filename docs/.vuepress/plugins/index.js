@@ -1,4 +1,4 @@
-module.exports={
+module.exports = {
   plugins: [
     // 代码块复制
     [
@@ -24,20 +24,22 @@ module.exports={
         separator: "-", // Separator of the slug, default: '-'
       },
     ],
+    //live2d看板娘
     [
-      "@vuepress-reco/vuepress-plugin-kan-ban-niang", //live2d看板娘
+      "@vuepress-reco/vuepress-plugin-kan-ban-niang",
       {
         theme: ["koharu"],
         clean: true,
       },
-    ], 
+    ],
+    // 音乐播放器插件
     [
-      "meting",                   // 音乐播放器插件
+      "meting",
       {
         meting: {
-          server: "netease",  
+          server: "netease",
           type: "playlist",
-          mid: "7228385774",    
+          mid: "7228385774",
           // auto: 'https://y.qq.com/n/ryqq/player'
         },
         aplayer: {
@@ -52,4 +54,4 @@ module.exports={
       },
     ],
   ],
-}
+};
