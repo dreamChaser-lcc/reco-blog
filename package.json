@@ -18,5 +18,8 @@
     "vuepress-plugin-permalink-pinyin": "^1.0.0",
     "vuepress-theme-reco": "^1.6.6"
   },
-  "description": "Personal growth and learning records"
+  "description": "Personal growth and learning records",
+  "dependencies": {
+    "vuepress-plugin-nuggets-style-copy": "^1.0.3"
+  }
 }
