@@ -83,6 +83,12 @@ module.exports = {
   },
   plugins: [
     [
+      'permalink-pinyin', {
+        lowercase: true, // Converted into lowercase, default: true
+        separator: '-' // Separator of the slug, default: '-'
+      },
+    ],
+    [
       "@vuepress-reco/vuepress-plugin-kan-ban-niang",
       {
         theme: ["koharu"],
