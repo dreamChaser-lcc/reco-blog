@@ -1,7 +1,7 @@
 module.exports = {
   title: "myblog",
   description: "Personal growth and learning records",
-  dest: "public",
+  dest: "docs/.vuepress/dist",
   base:'/reco-blog/docs',
   head: [
     [
