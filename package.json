@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
+    "mddir": "^1.1.1",
     "vuepress": "1.8.2",
     "vuepress-plugin-meting": "^0.3.1",
     "vuepress-plugin-permalink-pinyin": "^1.0.0",
