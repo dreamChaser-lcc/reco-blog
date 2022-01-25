@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "vuepress dev docs --temp ./temp",
-    "dev": "vuepress dev docs --open --host \"localhost\"",
+    "dev": "vuepress dev docs --host \"localhost\"",
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {

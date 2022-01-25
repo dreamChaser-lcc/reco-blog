@@ -12,10 +12,10 @@ module.exports = {
     ],
     // 页码导航
     [
-      ("@vuepress-reco/vuepress-plugin-pagation",
+      "@vuepress-reco/vuepress-plugin-pagation",
       {
         perPage: 7,
-      }),
+      },
     ],
     [
       "permalink-pinyin", // 解决文件名中文报错问题
