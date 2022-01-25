@@ -1,20 +1,24 @@
 ---
-title: '在vuepress中的Markdown一些常用语法'
-categories: 
+title: "在vuepress中的Markdown一些常用语法"
+categories:
   - blog
 tags:
- - vuepress
- - theme-reco
+  - vuepress
+  - theme-reco
 ---
 
 ## 标题
 
 ```md
-#       // 一级标题
-##      // 二级标题
-###     // 三级标题
-####    // 四级标题
-#####   // 五级标题
+# // 一级标题
+
+## // 二级标题
+
+### // 三级标题
+
+#### // 四级标题
+
+##### // 五级标题
 ```
 
 ## 插入图片
@@ -28,25 +32,35 @@ tags:
 ```md
 [链接描述](链接地址)
 ```
+
 ## 列表
+
 ```md
   <!-- 原点列表/无序列表 -->
-  - 列表一
-  - 列表二
-  <!-- 有序列表 -->
-  1. 列表一
-  2. 列表二
+
+- 列表一
+- 列表二
+<!-- 有序列表 -->
+
+1. 列表一
+2. 列表二
 ```
+
 ## 表格
+
 ```
 | 表头   | 表头   |
 | ------ | ------ |
 | 单元格 | 单元格 |
 | 单元格 | 单元格 |
 ```
+
 ## 容器
+
 使用插件 vuepress-plugin-container
+
 ### 输入
+
 ```md
 ::: tip
 This is a tip
@@ -71,7 +85,9 @@ This is a dangerous warning
 这是一个详情块，在 IE / Edge 中不生效
 :::
 ```
+
 ### 输出
+
 ::: tip
 This is a tip
 :::
@@ -95,5 +111,21 @@ This is a dangerous warning
 这是一个详情块，在 IE / Edge 中不生效
 :::
 
+## 表情 emoji
+
+:tada: [其他表情代码](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json)
+
+### 输入
+
+```md
+:100: :grinning:
+```
+
+### 输出
+
+:100: :grinning:
+
 ## 参考
+
 [vuepress-themo-reco](https://vuepress-theme-reco.recoluan.com/views/1.x/syntax.html)
+[vuepress-markdown扩展](https://vuepress.vuejs.org/zh/guide/markdown.html)

@@ -20,12 +20,16 @@ module.exports = {
             text: "vuepress-reco",
             link: "/docs/vuepress/",
           },
+          {
+            text: "React文档",
+            link: "/docs/React/",
+          },
         ],
       },
       {
-        text:'留言板',
-        icon:'reco-suggestion',
-        link:'/blogs/suggestion'
+        text: "留言板",
+        icon: "reco-suggestion",
+        link: "/blogs/suggestion",
       },
       {
         text: "GitHub",
@@ -72,12 +76,28 @@ module.exports = {
           ],
         },
       ],
+      "/docs/React/": [
+        {
+          title: "React文档",
+          collapsable: false,
+          children: [
+            {
+              title:'概述',
+              path:'./'
+            },
+            {
+              title: "组件",
+              children: [{ title: "组件封装", path: "组件/组件封装" }],
+            },
+          ],
+        },
+      ],
     },
     // 留言板
     valineConfig: {
-      appId: 'wMhYUMsTRmok697Y2P2C8XHf-gzGzoHsz',// your appId
-      appKey: 'fWcCMoqljXsTetWnzoPFGesJ', // your appKey
-      commentsSolution:'valine'
+      appId: "wMhYUMsTRmok697Y2P2C8XHf-gzGzoHsz", // your appId
+      appKey: "fWcCMoqljXsTetWnzoPFGesJ", // your appKey
+      commentsSolution: "valine",
     },
     docsDir: "docs",
     type: "blog",
