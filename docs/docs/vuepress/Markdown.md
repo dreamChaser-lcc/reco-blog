@@ -46,6 +46,24 @@ tags:
 2. 列表二
 ```
 
+## 代码块且行高亮
+
+输入:
+
+````md
+```tsx {1}
+// 高亮行
+非高亮行;
+```
+````
+
+输出:
+
+```tsx {1}
+// 高亮行
+非高亮行;
+```
+
 ## 表格
 
 ```
@@ -57,7 +75,9 @@ tags:
 
 ## 容器
 
+:::tip
 使用插件 vuepress-plugin-container
+:::
 
 ### 输入
 
@@ -128,4 +148,5 @@ This is a dangerous warning
 ## 参考
 
 [vuepress-themo-reco](https://vuepress-theme-reco.recoluan.com/views/1.x/syntax.html)
-[vuepress-markdown扩展](https://vuepress.vuejs.org/zh/guide/markdown.html)
+
+[vuepress-markdown 扩展](https://vuepress.vuejs.org/zh/guide/markdown.html)

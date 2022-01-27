@@ -1,5 +1,15 @@
 module.exports = {
   themeConfig: {
+    locales: {
+      "/": {
+        pagation: {
+          prev: '上一页',
+          next: '下一页',
+          go: 'go',
+          jump: '跳转至'
+        }
+      },
+    },
     // 导航栏配置
     nav: [
       {
@@ -82,12 +92,15 @@ module.exports = {
           collapsable: false,
           children: [
             {
-              title:'概述',
-              path:'./'
+              title: "概述",
+              path: "./",
             },
             {
               title: "组件",
-              children: [{ title: "组件封装", path: "组件/组件封装" }],
+              children: [
+                { title: "组件封装", path: "组件/组件封装" },
+                { title: "组件之间的通信方式", path: "组件/组件之间通信" },
+              ],
             },
           ],
         },
