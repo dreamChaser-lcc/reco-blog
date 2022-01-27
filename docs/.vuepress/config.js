@@ -1,5 +1,5 @@
 const { themeConfig } = require("./themeConfig");
-const { plugins } = require('./plugins')
+const { plugins } = require("./plugins");
 
 module.exports = {
   title: "stay or life",
@@ -23,10 +23,23 @@ module.exports = {
       },
     ],
   ],
+  locales: {
+    "/": {
+      lang: "zh-CN",
+    },
+  },
   theme: "reco",
   themeConfig,
   plugins,
   markdown: {
     lineNumbers: true,
+  },
+  // webpack配置
+  configureWebpack: {
+    resolve: {
+      alias: {
+        "@": "/docs",
+      },
+    },
   },
 };
