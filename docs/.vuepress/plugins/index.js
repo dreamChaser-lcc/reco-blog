@@ -48,7 +48,7 @@ module.exports = {
           listFolded: true,
         },
         mobile: {
-          cover: false,
+          cover: true,
           lrc: false,
         },
       },
