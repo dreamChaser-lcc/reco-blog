@@ -34,6 +34,10 @@ module.exports = {
             text: "React文档",
             link: "/docs/React/",
           },
+          {
+            text: "Vue文档",
+            link: "/docs/Vue/vue3.0知识点",
+          },
         ],
       },
       {
@@ -107,12 +111,11 @@ module.exports = {
           ],
         },
       ],
-      "/docs/React/": [
-        "React中使用动画",
+      "/docs/Vue/": [
         {
-          title: "组件",
+          title: "Vue文档",
           collapsable: false,
-          children: ["组件/组件之间通信", "组件/组件封装"],
+          children: ["vue3.0知识点", "vuex 4.x", "vue-router", "vite学习"],
         },
       ],
     },
