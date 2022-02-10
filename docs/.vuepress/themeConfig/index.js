@@ -107,6 +107,14 @@ module.exports = {
           ],
         },
       ],
+      "/docs/React/": [
+        "React中使用动画",
+        {
+          title: "组件",
+          collapsable: false,
+          children: ["组件/组件之间通信", "组件/组件封装"],
+        },
+      ],
     },
     // 留言板
     valineConfig: {
