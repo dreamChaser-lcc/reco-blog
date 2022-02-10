@@ -118,6 +118,13 @@ module.exports = {
           children: ["vue3.0知识点", "vuex 4.x", "vue-router", "vite学习"],
         },
       ],
+      "/docs/other/": [
+        {
+          title: "其他",
+          collapsable: false,
+          children: ["git常用操作命令"],
+        },
+      ],
     },
     // 留言板
     valineConfig: {
