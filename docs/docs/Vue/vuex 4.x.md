@@ -177,6 +177,6 @@ export interface StoreOptions<S> {
 }
 ```
 
-# 详情可查看官网地址
+## 参考链接
 
-https://vuex.vuejs.org/
+[vuex 官网](https://vuex.vuejs.org/)

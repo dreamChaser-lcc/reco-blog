@@ -122,7 +122,7 @@ module.exports = {
         {
           title: "其他",
           collapsable: false,
-          children: ["git常用操作命令"],
+          children: ["Git"],
         },
       ],
     },
