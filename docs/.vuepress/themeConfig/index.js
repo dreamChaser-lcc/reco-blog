@@ -1,5 +1,6 @@
 module.exports = {
-  themeConfig: {
+  themeConfig: { 
+    jsdelivrUrl: "https://cdn.jsdelivr.net/gh/dreamChaser-lcc/typora-cloudImages/blog/",
     locales: {
       "/": {
         pagation: {

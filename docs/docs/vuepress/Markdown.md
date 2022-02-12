@@ -26,6 +26,34 @@ tags:
 ```md
 ![名称描述](图片地址)
 ```
+### 本地图片(别名)
+vuepress设置webpack别名
+```js
+// config.js
+ configureWebpack: {
+    resolve: {
+      alias: {
+        "@": "/docs/assets",
+      },
+    },
+  },
+```
+md文件中使用
+```md
+![常用操作命令](~@/.vuepress/assets/image/git_command.png)
+```
+### jsdelivr加速访问图片
+vuepress设置themeConfig
+```js
+// config.js
+ themeConfig: { 
+    jsdelivrUrl: "https://cdn.jsdelivr.net/gh/dreamChaser-lcc/typora-cloudImages/blog/",
+ }
+```
+md文件中使用
+```md
+<img alt='常用操作命令' :src="`${$themeConfig.jsdelivrUrl}/git/git_command.png`">
+```
 
 ## 链接
 

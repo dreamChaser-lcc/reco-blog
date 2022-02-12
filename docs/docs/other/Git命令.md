@@ -8,7 +8,8 @@ tags:
 
 ## 常用操作命令速查表
 
-![常用操作命令](../../.vuepress/assets/image/git_command.png)
+<!-- ![常用操作命令](~@/.vuepress/assets/image/git_command.png) -->
+<img alt='常用操作命令' :src="`${$themeConfig.jsdelivrUrl}/git/git_command.png`">
 
 ## git 分析理解
 
