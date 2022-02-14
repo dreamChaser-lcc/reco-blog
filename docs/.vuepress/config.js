@@ -39,6 +39,7 @@ module.exports = {
     resolve: {
       alias: {
         "@": "/docs/assets",
+        "@@": "/docs",
       },
     },
   },
