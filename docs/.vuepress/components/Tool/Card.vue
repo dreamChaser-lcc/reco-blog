@@ -10,7 +10,7 @@
           {{ descripte }}
         </div>
         <div class="link text-overflow">
-          <a target="_blank" :title="url" :href="url">{{ url }}</a>
+          <a  class="text-overflow" target="_blank" :title="url" :href="url">{{ url }}</a>
         </div>
       </div>
     </div>
@@ -84,14 +84,13 @@ export default {
 }
 .main .content .link {
   font-size: 10px;
+  width:200px;
 }
 /* 溢出隐藏 */
 .text-overflow {
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
 }
 /** 溢出隐藏 （超出两行）*/
 .text-overflow-two {
