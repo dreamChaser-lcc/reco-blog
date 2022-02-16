@@ -53,6 +53,11 @@ module.exports = {
         link: "/blogs/suggestion/",
       },
       {
+        text: "留言板",
+        icon: "reco-suggestion",
+        link: "/docs/other/Git命令/",
+      },
+      {
         text: "GitHub",
         icon: "reco-github",
         link: "https://github.com/dreamChaser-lcc",
