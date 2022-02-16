@@ -15,9 +15,8 @@ tagline: 生活不是电影，没有那么多的不期而遇
 # }
 bgImage: "https://cdn.jsdelivr.net/gh/dreamChaser-lcc/typora-cloudImages/blog/wallpaper/1030088.jpg"
 bgImageStyle: { 
-  height: "100vh",
+  height: "95vh",
   background-position: center 10%,
-  background-attachment: fixed
 }
 isShowTitleInHome: true
 # actionText: Guide

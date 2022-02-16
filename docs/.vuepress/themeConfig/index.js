@@ -1,6 +1,7 @@
 module.exports = {
-  themeConfig: { 
-    jsdelivrUrl: "https://cdn.jsdelivr.net/gh/dreamChaser-lcc/typora-cloudImages/blog/",
+  themeConfig: {
+    jsdelivrUrl:
+      "https://cdn.jsdelivr.net/gh/dreamChaser-lcc/typora-cloudImages/blog/",
     locales: {
       "/": {
         pagation: {
@@ -44,12 +45,12 @@ module.exports = {
       {
         text: "实用工具",
         icon: "reco-eye",
-        link: "/blogs/toolBar/",
+        link: "/docs/blogs/toolBar/",
       },
       {
         text: "留言板",
         icon: "reco-suggestion",
-        link: "/blogs/suggestion/",
+        link: "/docs/blogs/suggestion/",
       },
       {
         text: "GitHub",
