@@ -13,13 +13,20 @@ tagline: 生活不是电影，没有那么多的不期而遇
 #   background: '#fff',
 #   borderRadius: '1rem',
 # }
-bgImage: "https://cdn.jsdelivr.net/gh/dreamChaser-lcc/typora-cloudImages/blog/wallpaper/911401.jpg"
-bgImageStyle: { height: "100vh",width: "100vw",background-position: 50% center}
+bgImage: "https://cdn.jsdelivr.net/gh/dreamChaser-lcc/typora-cloudImages/blog/wallpaper/1030088.jpg"
+bgImageStyle: { 
+  height: "100vh",
+  background-position: center 10%,
+  background-attachment: fixed
+}
 isShowTitleInHome: true
 # actionText: Guide
 # actionLink: /blogs/other/guide
 ---
 
+<!-- ![85305](https://cdn.jsdelivr.net/gh/dreamChaser-lcc/typora-cloudImages/blog/wallpaper/85305.jpg) -->
+<!-- ![1207071](https://cdn.jsdelivr.net/gh/dreamChaser-lcc/typora-cloudImages/blog/wallpaper/1207071.jpg)
+![1030088](https://cdn.jsdelivr.net/gh/dreamChaser-lcc/typora-cloudImages/blog/wallpaper/1030088.jpg) -->
 <!-- ![911401](https://cdn.jsdelivr.net/gh/dreamChaser-lcc/typora-cloudImages/blog/wallpaper/911401.jpg)
 ![616945](https://cdn.jsdelivr.net/gh/dreamChaser-lcc/typora-cloudImages/blog/wallpaper/616945.png)
 ![95fb03e7565379b2ff6335785600295e43b2dace](https://cdn.jsdelivr.net/gh/dreamChaser-lcc/typora-cloudImages/blog/wallpaper/95fb03e7565379b2ff6335785600295e43b2dace.jpg) -->
