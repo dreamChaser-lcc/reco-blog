@@ -58,7 +58,7 @@ export default {
   font-weight: bold;
   border-bottom: 1px solid #c3c3c3;
 }
-.card-wapper .main {
+.card-wapper .card-main {
   display: flex;
   align-items: center;
 }
