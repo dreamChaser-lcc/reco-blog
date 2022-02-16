@@ -45,7 +45,7 @@ module.exports = {
       {
         text: "实用工具",
         icon: "reco-eye",
-        link: "/blogs/toolBar/",
+        link: "/blogs/toolBar导航/",
       },
       {
         text: "留言板",
