@@ -1,11 +1,11 @@
 <template>
-  <div class="wapper" @click="handleClickCard">
+  <div class="card-wapper" @click="handleClickCard">
     <div :title="title" class="title text-overflow">{{ title }}</div>
-    <div class="main">
+    <div class="card-main">
       <div v-if="icon" class="icon">
         <img :src="`${$themeConfig.jsdelivrUrl + icon}`" alt="fail" />
       </div>
-      <div class="content">
+      <div class="card-content">
         <div :title="descripte" class="descripte text-overflow-two">
           {{ descripte }}
         </div>
@@ -39,7 +39,7 @@ export default {
 };
 </script>
 <style scoped>
-.wapper {
+.card-wapper {
   background: #fff;
   margin: 10px;
   border: 1px solid #c3c3c3;
@@ -49,20 +49,20 @@ export default {
   border-radius: 5px;
   box-sizing: border-box;
 }
-.wapper:hover {
+.card-wapper:hover {
   box-shadow: 3px 3px 5px 0px #4a6886;
   cursor: pointer;
 }
-.wapper .title {
+.card-wapper .title {
   padding: 5px;
   font-weight: bold;
   border-bottom: 1px solid #c3c3c3;
 }
-.wapper .main {
+.card-wapper .main {
   display: flex;
   align-items: center;
 }
-.main .icon {
+.card-main .icon {
   flex: 0 0 50px;
   height: 50px;
   border: 1px solid #c3c3c3;
@@ -71,18 +71,18 @@ export default {
   align-items: center;
   border-radius: 5px;
 }
-.main .content {
+.card-main .card-content {
   padding: 8px;
 }
-.main .content .title {
+.card-main.card-content .title {
   font-weight: bold;
 }
-.main .content .descripte {
+.card-main .card-content .descripte {
   margin: 10px 0;
   color: #8d8c8c;
   font-size: 13px;
 }
-.main .content .link {
+.card-main .card-content .link {
   font-size: 10px;
   width:200px;
 }
