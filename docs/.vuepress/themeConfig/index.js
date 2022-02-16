@@ -44,12 +44,12 @@ module.exports = {
       {
         text: "实用工具",
         icon: "reco-eye",
-        link: "/blogs/toolBar",
+        link: "/blogs/toolBar/",
       },
       {
         text: "留言板",
         icon: "reco-suggestion",
-        link: "/blogs/suggestion",
+        link: "/blogs/suggestion/",
       },
       {
         text: "GitHub",
