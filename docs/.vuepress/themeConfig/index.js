@@ -82,6 +82,7 @@ module.exports = {
               path: "Markdown",
             },
             "博客部署",
+            "图床",
           ],
         },
         {
