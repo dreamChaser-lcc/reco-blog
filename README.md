@@ -17,7 +17,17 @@ keys:                       // 配置文章密码
  - '123456'
 publish: false              
 ---
+
+- 摘要1
+- 摘要2
+- 摘要3
+
+![1207071](https://cdn.jsdelivr.net/gh/dreamChaser-lcc/typora-cloudImages/blog/wallpaper/1207071.jpg)
+
+<!-- more -->
+
 {content}
+
 ```
 
 ## 特别鸣谢

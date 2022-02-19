@@ -2,5 +2,131 @@
 
 // 播放器黑暗主题颜色bug
 .aplayer-list-title, .aplayer-title {
-  color:#333;
+  color: #333;
+}
+
+// 变量 博客边框颜色
+$FIRST_BORDER_COLOR = #0be881;
+$SECOND_BORDER_COLOR = #00d8d6;
+$THIRD_BORDER_COLOR = #ffdd59;
+
+// 边框动画样式
+.abstract-wrapper {
+  .abstract-item {
+    & {
+      position: relative;
+    }
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+    }
+
+    &:nth-child(3n-2), &:nth-child(3n-1) {
+      &::before, &::after {
+        // 避免内容溢出，被父元素overflow:hidden;隐藏
+        box-sizing: border-box;
+        border: 2px solid transparent;
+        width: 0;
+        height: 0;
+      }
+    }
+
+    // 第一条
+    &:nth-child(3n-2) {
+      &::before {
+        top: 0;
+        left: 0;
+      }
+
+      &::after {
+        bottom: 0;
+        right: 0;
+      }
+
+      &:hover::before, &:hover::after {
+        width: 100%;
+        height: 100%;
+      }
+
+      &:hover::before {
+        border-top-color: $FIRST_BORDER_COLOR;
+        border-right-color: $FIRST_BORDER_COLOR;
+        transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+      }
+
+      &:hover::after {
+        border-bottom-color: $FIRST_BORDER_COLOR;
+        border-left-color: $FIRST_BORDER_COLOR;
+        transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+      }
+    }
+
+    // 第二条
+    &:nth-child(3n-1) {
+      &::before, &::after {
+        top: 0;
+        left: 0;
+      }
+
+      &:hover::before, &:hover::after {
+        width: 100%;
+        height: 100%;
+      }
+
+      &:hover::before {
+        border-top-color: $SECOND_BORDER_COLOR;
+        border-right-color: $SECOND_BORDER_COLOR;
+      }
+
+      &:hover::after {
+        border-bottom-color: $SECOND_BORDER_COLOR;
+        border-left-color: $SECOND_BORDER_COLOR;
+        transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
+      }
+    }
+
+    // 第三条
+    &:nth-child(3n) {
+      &::before, &::after {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        // 避免内容溢出，被父元素overflow:hidden;隐藏
+        box-sizing: border-box;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+      }
+
+      &::before {
+        border-top: 2px solid $THIRD_BORDER_COLOR;
+        border-bottom: 2px solid $THIRD_BORDER_COLOR;
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+      }
+
+      &::after {
+        border-left: 2px solid $THIRD_BORDER_COLOR;
+        border-right: 2px solid $THIRD_BORDER_COLOR;
+        -webkit-transform: scale3d(1, 0, 1);
+        transform: scale3d(1, 0, 1);
+      }
+
+      &:hover::before, &:hover::after {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        transition: transform 0.5s, -webkit-transform 0.5s;
+      }
+    }
+  }
+}
+
+// 博客详情摘要
+.abstract-wrapper .abstract-item {
+  & img {
+    box-sizing: border-box;
+    max-width: 50%;
+    border-radius: 1rem;
+  }
 }
