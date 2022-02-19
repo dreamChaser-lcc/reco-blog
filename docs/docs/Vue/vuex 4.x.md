@@ -4,7 +4,6 @@ tags:
   - Vuex
 categories:
   - Vue
-  - Vuex
 ---
 
 # vuex 概括

@@ -4,7 +4,6 @@ tags:
   - Vue3
 categories:
   - Vue
-  - Vue3
 ---
 
 ## 挂载全局方法
