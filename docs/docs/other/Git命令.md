@@ -230,3 +230,20 @@ git merge xxx  //xxx为新建分支
 (修改合并冲突)
 git push
 ```
+
+## FQA 常见问题
+
+### 拉代码之前需要先暂存代码,出现以下报错
+
+```bash
+Please commit your changes or stash them before you merge
+```
+
+如下操作
+
+```bash
+git stash   // 将已修改未提交的代码隐藏 
+git pull    // 更新远程分支最新代码
+git pop     // 再把已修改分支代码放出,并和合并冲突错误
+
+```
