@@ -47,3 +47,10 @@ tags:
     <Tool-Card title="老照片修复馆" descripte='修复老照片' icon="tool-icon/20220215154234.png" url='https://huggingface.co/spaces/akhaliq/GFPGAN'/>
   </template>
 </Tool-CardsLayout>
+
+## 学习资料
+<Tool-CardsLayout>
+  <template slot= 'toolList'>
+     <Tool-Card title="MDN_WEB_DOCS" descripte='前端学习文档html、css、js' :icon="`tool-icon/20220311160630.png`" url='https://developer.mozilla.org/'/>
+  </template>
+</Tool-CardsLayout>
