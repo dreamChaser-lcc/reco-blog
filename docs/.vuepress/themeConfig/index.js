@@ -43,8 +43,8 @@ module.exports = {
             link: "/docs/Vue/vue3.0知识点",
           },
           {
-            text: "Css",
-            link: "/docs/Vue/",
+            text: "CSS",
+            link: "/docs/CSS/CSS3动画.md",
           },
         ],
       },

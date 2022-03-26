@@ -73,7 +73,7 @@ const sidebarConfig = {
     {
       title: "其他",
       collapsable: false,
-      children: ["Css3动画"],
+      children: ["CSS3动画"],
     },
   ],
 }
