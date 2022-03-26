@@ -76,5 +76,12 @@ const sidebarConfig = {
       children: ["CSS3动画"],
     },
   ],
-}
+  "/docs/deploy/": [
+    {
+      title: "服务器部署",
+      collapsable: false,
+      children: ["Nginx", "部署项目"],
+    },
+  ],
+};
 module.exports = sidebarConfig;

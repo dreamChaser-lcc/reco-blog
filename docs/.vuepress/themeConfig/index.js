@@ -44,7 +44,11 @@ module.exports = {
           },
           {
             text: "CSS",
-            link: "/docs/CSS/CSS3动画.md",
+            link: "/docs/CSS/CSS3动画",
+          },
+          {
+            text: "服务器部署",
+            link: "/docs/deploy/Nginx",
           },
         ],
       },
