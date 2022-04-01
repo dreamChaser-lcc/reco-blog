@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Nginx配置(待完善) | stay or life</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/reco-blog/favicon.ico">
+    <meta name="description" content="Personal growth and learning records">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/reco-blog/assets/css/0.styles.ccd1394f.css" as="style"><link rel="preload" href="/reco-blog/assets/js/app.26830249.js" as="script"><link rel="preload" href="/reco-blog/assets/js/3.844ca5e3.js" as="script"><link rel="preload" href="/reco-blog/assets/js/1.9a26b4f5.js" as="script"><link rel="preload" href="/reco-blog/assets/js/26.2a3b186f.js" as="script"><link rel="prefetch" href="/reco-blog/assets/js/10.0ee22336.js"><link rel="prefetch" href="/reco-blog/assets/js/11.a19c9979.js"><link rel="prefetch" href="/reco-blog/assets/js/12.4a5b7d18.js"><link rel="prefetch" href="/reco-blog/assets/js/13.4d3adedc.js"><link rel="prefetch" href="/reco-blog/assets/js/14.aaaa0f2d.js"><link rel="prefetch" href="/reco-blog/assets/js/15.1b5798a5.js"><link rel="prefetch" href="/reco-blog/assets/js/16.f8741127.js"><link rel="prefetch" href="/reco-blog/assets/js/17.2633fece.js"><link rel="prefetch" href="/reco-blog/assets/js/18.ff6ee6b5.js"><link rel="prefetch" href="/reco-blog/assets/js/19.0862f4b7.js"><link rel="prefetch" href="/reco-blog/assets/js/20.1fce79a8.js"><link rel="prefetch" href="/reco-blog/assets/js/21.2f7222b8.js"><link rel="prefetch" href="/reco-blog/assets/js/22.3f5042a3.js"><link rel="prefetch" href="/reco-blog/assets/js/23.8598637b.js"><link rel="prefetch" href="/reco-blog/assets/js/24.7587a6b0.js"><link rel="prefetch" href="/reco-blog/assets/js/25.e1076973.js"><link rel="prefetch" href="/reco-blog/assets/js/27.548849d7.js"><link rel="prefetch" href="/reco-blog/assets/js/28.fe66f220.js"><link rel="prefetch" href="/reco-blog/assets/js/29.fe0c21b1.js"><link rel="prefetch" href="/reco-blog/assets/js/30.a3ba0b80.js"><link rel="prefetch" href="/reco-blog/assets/js/31.ba086302.js"><link rel="prefetch" href="/reco-blog/assets/js/32.b18d7508.js"><link rel="prefetch" href="/reco-blog/assets/js/33.1d90808e.js"><link rel="prefetch" href="/reco-blog/assets/js/34.bfb20668.js"><link rel="prefetch" href="/reco-blog/assets/js/35.cc37ad2d.js"><link rel="prefetch" href="/reco-blog/assets/js/4.0d29e37e.js"><link rel="prefetch" href="/reco-blog/assets/js/5.0b4de7f7.js"><link rel="prefetch" href="/reco-blog/assets/js/6.4f834abf.js"><link rel="prefetch" href="/reco-blog/assets/js/7.fbe2e477.js"><link rel="prefetch" href="/reco-blog/assets/js/8.ecae8aea.js"><link rel="prefetch" href="/reco-blog/assets/js/9.2f5450c0.js">
+    <link rel="stylesheet" href="/reco-blog/assets/css/0.styles.ccd1394f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-130b300a><div data-v-130b300a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-130b300a data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>stay or life</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>Personal growth and learning records</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>lcc</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-130b300a><header class="navbar" data-v-130b300a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/reco-blog/" class="home-link router-link-active"><img src="/reco-blog/logo_brown.png" alt="stay or life" class="logo"> <span class="site-name">stay or life</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/reco-blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reco-blog/categories/blog/" class="nav-link"><i class="undefined"></i>
+  blog
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/categories/other/" class="nav-link"><i class="undefined"></i>
+  other
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/categories/Css3/" class="nav-link"><i class="undefined"></i>
+  Css3
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/categories/React/" class="nav-link"><i class="undefined"></i>
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/categories/css3动画/" class="nav-link"><i class="undefined"></i>
+  css3动画
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/categories/Vue/" class="nav-link"><i class="undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/categories/部署/" class="nav-link"><i class="undefined"></i>
+  部署
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/categories/vuepress/" class="nav-link"><i class="undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/categories/theme-reco/" class="nav-link"><i class="undefined"></i>
+  theme-reco
+</a></li></ul></div></div><div class="nav-item"><a href="/reco-blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reco-blog/docs/vuepress/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/docs/React/" class="nav-link"><i class="undefined"></i>
+  React文档
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/docs/Vue/vue3.0知识点.html" class="nav-link"><i class="undefined"></i>
+  Vue文档
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/docs/CSS/CSS3动画.html" class="nav-link"><i class="undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/docs/deploy/Nginx.html" class="nav-link"><i class="undefined"></i>
+  服务器部署
+</a></li></ul></div></div><div class="nav-item"><a href="/reco-blog/blogs/toolBar导航/" class="nav-link"><i class="iconfont reco-eye"></i>
+  实用工具
+</a></div><div class="nav-item"><a href="/reco-blog/blogs/suggestion/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  留言板
+</a></div><div class="nav-item"><a href="https://github.com/dreamChaser-lcc" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-130b300a></div> <aside class="sidebar" data-v-130b300a><div class="personal-info-wrapper" data-v-39576ba9 data-v-130b300a><img src="/reco-blog/avatar.jpeg" alt="author-avatar" class="personal-img" data-v-39576ba9> <h3 class="name" data-v-39576ba9>
+    lcc
+  </h3> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>21</h3> <h6 data-v-39576ba9>文章</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>13</h3> <h6 data-v-39576ba9>标签</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/reco-blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reco-blog/categories/blog/" class="nav-link"><i class="undefined"></i>
+  blog
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/categories/other/" class="nav-link"><i class="undefined"></i>
+  other
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/categories/Css3/" class="nav-link"><i class="undefined"></i>
+  Css3
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/categories/React/" class="nav-link"><i class="undefined"></i>
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/categories/css3动画/" class="nav-link"><i class="undefined"></i>
+  css3动画
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/categories/Vue/" class="nav-link"><i class="undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/categories/部署/" class="nav-link"><i class="undefined"></i>
+  部署
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/categories/vuepress/" class="nav-link"><i class="undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/categories/theme-reco/" class="nav-link"><i class="undefined"></i>
+  theme-reco
+</a></li></ul></div></div><div class="nav-item"><a href="/reco-blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reco-blog/docs/vuepress/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/docs/React/" class="nav-link"><i class="undefined"></i>
+  React文档
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/docs/Vue/vue3.0知识点.html" class="nav-link"><i class="undefined"></i>
+  Vue文档
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/docs/CSS/CSS3动画.html" class="nav-link"><i class="undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/reco-blog/docs/deploy/Nginx.html" class="nav-link"><i class="undefined"></i>
+  服务器部署
+</a></li></ul></div></div><div class="nav-item"><a href="/reco-blog/blogs/toolBar导航/" class="nav-link"><i class="iconfont reco-eye"></i>
+  实用工具
+</a></div><div class="nav-item"><a href="/reco-blog/blogs/suggestion/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  留言板
+</a></div><div class="nav-item"><a href="https://github.com/dreamChaser-lcc" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>服务器部署</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/reco-blog/docs/deploy/nginx.html" aria-current="page" class="active sidebar-link">Nginx配置(待完善)</a></li><li><a href="/reco-blog/docs/deploy/bu-shu-xiang-mu.html" class="sidebar-link">项目部署_宝塔面板(待完善)</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>Nginx配置(待完善)</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>lcc</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-130b300a><main class="page"><section><div class="page-title"><h1 class="title">Nginx配置(待完善)</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>lcc</span></i> <!----> <i class="iconfont reco-eye" data-v-f875f3fc><span id="/reco-blog/docs/deploy/nginx.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-f875f3fc><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="tags iconfont reco-tag" data-v-f875f3fc><span class="tag-item" data-v-f875f3fc>nginx</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="基本配置"><a href="#基本配置" class="header-anchor">#</a> 基本配置</h2> <div class="language-nginx line-numbers-mode"><pre class="language-nginx"><code><span class="token directive"><span class="token keyword">user</span>  nginx</span><span class="token punctuation">;</span>                        <span class="token comment"># 运行用户，默认即是nginx，可以不进行设置</span>
+<span class="token directive"><span class="token keyword">worker_processes</span>  <span class="token number">1</span></span><span class="token punctuation">;</span>                <span class="token comment"># Nginx 进程数，一般设置为和 CPU 核数一样</span>
+<span class="token directive"><span class="token keyword">error_log</span>  /var/log/nginx/error.log warn</span><span class="token punctuation">;</span>   <span class="token comment"># Nginx 的错误日志存放目录</span>
+<span class="token directive"><span class="token keyword">pid</span>        /var/run/nginx.pid</span><span class="token punctuation">;</span>      <span class="token comment"># Nginx 服务启动时的 pid 存放位置</span>
+
+<span class="token directive"><span class="token keyword">events</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">use</span> epoll</span><span class="token punctuation">;</span>     <span class="token comment"># 使用epoll的I/O模型(如果你不知道Nginx该使用哪种轮询方法，会自动选择一个最适合你操作系统的)</span>
+    <span class="token directive"><span class="token keyword">worker_connections</span> <span class="token number">1024</span></span><span class="token punctuation">;</span>   <span class="token comment"># 每个进程允许最大并发数</span>
+<span class="token punctuation">}</span>
+
+<span class="token directive"><span class="token keyword">http</span></span> <span class="token punctuation">{</span>   <span class="token comment"># 配置使用最频繁的部分，代理、缓存、日志定义等绝大多数功能和第三方模块的配置都在这里设置</span>
+    <span class="token comment"># 设置日志模式</span>
+    <span class="token directive"><span class="token keyword">log_format</span>  main  <span class="token string">'<span class="token variable">$remote_addr</span> - <span class="token variable">$remote_user</span> [<span class="token variable">$time_local]</span> &quot;<span class="token variable">$request</span>&quot; '</span>
+                      <span class="token string">'<span class="token variable">$status</span> <span class="token variable">$body_bytes_sent</span> &quot;<span class="token variable">$http_referer</span>&quot; '</span>
+                      <span class="token string">'&quot;<span class="token variable">$http_user_agent</span>&quot; &quot;<span class="token variable">$http_x_forwarded_for</span>&quot;'</span></span><span class="token punctuation">;</span>
+
+    <span class="token directive"><span class="token keyword">access_log</span>  /var/log/nginx/access.log  main</span><span class="token punctuation">;</span>   <span class="token comment"># Nginx访问日志存放位置</span>
+
+    <span class="token directive"><span class="token keyword">sendfile</span>            <span class="token boolean">on</span></span><span class="token punctuation">;</span>   <span class="token comment"># 开启高效传输模式</span>
+    <span class="token directive"><span class="token keyword">tcp_nopush</span>          <span class="token boolean">on</span></span><span class="token punctuation">;</span>   <span class="token comment"># 减少网络报文段的数量</span>
+    <span class="token directive"><span class="token keyword">tcp_nodelay</span>         <span class="token boolean">on</span></span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">keepalive_timeout</span>   <span class="token number">65</span></span><span class="token punctuation">;</span>   <span class="token comment"># 保持连接的时间，也叫超时时间，单位秒</span>
+    <span class="token directive"><span class="token keyword">types_hash_max_size</span> <span class="token number">2048</span></span><span class="token punctuation">;</span>
+
+    <span class="token directive"><span class="token keyword">include</span>             /etc/nginx/mime.types</span><span class="token punctuation">;</span>      <span class="token comment"># 文件扩展名与类型映射表</span>
+    <span class="token directive"><span class="token keyword">default_type</span>        application/octet-stream</span><span class="token punctuation">;</span>   <span class="token comment"># 默认文件类型</span>
+
+    <span class="token directive"><span class="token keyword">include</span> /etc/nginx/conf.d/*.conf</span><span class="token punctuation">;</span>   <span class="token comment"># 加载子配置项</span>
+
+    <span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+    	<span class="token directive"><span class="token keyword">listen</span>       <span class="token number">80</span></span><span class="token punctuation">;</span>       <span class="token comment"># 配置监听的端口</span>
+    	<span class="token directive"><span class="token keyword">server_name</span>  localhost</span><span class="token punctuation">;</span>    <span class="token comment"># 配置的域名</span>
+
+    	<span class="token directive"><span class="token keyword">location</span> /</span> <span class="token punctuation">{</span>
+    		<span class="token directive"><span class="token keyword">root</span>   /usr/share/nginx/html</span><span class="token punctuation">;</span>  <span class="token comment"># 网站根目录</span>
+    		<span class="token directive"><span class="token keyword">index</span>  index.html index.htm</span><span class="token punctuation">;</span>   <span class="token comment"># 默认首页文件</span>
+    		<span class="token directive"><span class="token keyword">deny</span> xxx.xxx.xxx.xxx</span><span class="token punctuation">;</span>   <span class="token comment"># 禁止访问的ip地址，可以为all</span>
+    		<span class="token directive"><span class="token keyword">allow</span> xxx.xxx.xxx.xxx</span><span class="token punctuation">;</span> <span class="token comment"># 允许访问的ip地址，可以为all</span>
+    	<span class="token punctuation">}</span>
+
+    	<span class="token directive"><span class="token keyword">error_page</span> <span class="token number">500</span> <span class="token number">502</span> <span class="token number">503</span> <span class="token number">504</span> /50x.html</span><span class="token punctuation">;</span>  <span class="token comment"># 默认50x对应的访问页面</span>
+    	<span class="token directive"><span class="token keyword">error_page</span> <span class="token number">400</span> <span class="token number">404</span> error.html</span><span class="token punctuation">;</span>   <span class="token comment"># 同上</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br></div></div><h2 id="全局变量"><a href="#全局变量" class="header-anchor">#</a> 全局变量</h2> <table><thead><tr><th>全局变量名称</th> <th>作用</th></tr></thead> <tbody><tr><td>$host</td> <td>请求信息中的 Host，如果请求中没有 Host 行，则等于设置的服务器名，不包含端口</td></tr> <tr><td>$request_method</td> <td>客户端请求类型，如 GET、POST</td></tr> <tr><td>$remote_addr</td> <td>客户端的 IP 地址$args 请求中的参数</td></tr> <tr><td>$arg_PARAMETERGET</td> <td>请求中变量名 PARAMETER 参数的值，例如：$http_user_agent(Uaer-Agent 值), $http_referer...</td></tr> <tr><td>$content_length</td> <td>请求头中的 Content-length 字段</td></tr> <tr><td>$http_user_agent</td> <td>客户端 agent 信息</td></tr> <tr><td>$http_cookie</td> <td>客户端 cookie 信息</td></tr> <tr><td>$remote_addr</td> <td>客户端的 IP 地址</td></tr> <tr><td>$remote_port</td> <td>客户端的端口</td></tr> <tr><td>$http_user_agent</td> <td>客户端 agent 信息</td></tr> <tr><td>$server_protocol</td> <td>请求使用的协议，如 HTTP/1.0、HTTP/1.1</td></tr> <tr><td>$server_addr</td> <td>服务器地址</td></tr> <tr><td>$server_name</td> <td>服务器名称</td></tr> <tr><td>$server_port</td> <td>服务器的端口号</td></tr> <tr><td>$scheme</td> <td>HTTP 方法（如 http，https）</td></tr></tbody></table> <h2 id="反向代理-解决跨域的一种流行方案"><a href="#反向代理-解决跨域的一种流行方案" class="header-anchor">#</a> 反向代理(解决跨域的一种流行方案)</h2> <div class="language-nginx line-numbers-mode"><pre class="language-nginx"><code><span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+  <span class="token directive"><span class="token keyword">listen</span> <span class="token number">9001</span></span><span class="token punctuation">;</span>  <span class="token comment"># 监听端口</span>
+  <span class="token directive"><span class="token keyword">server_name</span> myService</span><span class="token punctuation">;</span>  <span class="token comment"># 外网访问服务器名(域名)</span>
+
+  <span class="token directive"><span class="token keyword">location</span> ~ /admin/</span> <span class="token punctuation">{</span>    <span class="token comment"># 当访问 url 含有/admin/的接口转发到 http://127.0.0.1:3000</span>
+    <span class="token directive"><span class="token keyword">proxy_pass</span> http://127.0.0.1:3000</span><span class="token punctuation">;</span> <span class="token comment"># 例如访问 myService/admin/getPermission</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token directive"><span class="token keyword">location</span> ~ /goods/</span> <span class="token punctuation">{</span>      <span class="token comment"># 当访问 url 含有/goods/的接口转发到 http://127.0.0.1:5000</span>
+    <span class="token directive"><span class="token keyword">proxy_pass</span> http://127.0.0.1:5000</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><div class="custom-block tip"><p class="title"></p><p>location 后面的指令语法</p> <ol><li><code>=</code>  精确匹配路径，用于不含正则表达式的 uri 前，如果匹配成功，不再进行后续的查找；</li> <li><code>^~</code> 用于不含正则表达式的 url 前，表示如果该符号后面的字符是最佳匹配，采用该规则，不再进行后续的查找；</li> <li><code>~</code>  表示用该符号后面的正则去匹配路径，区分大小写；</li> <li><code>~*</code> 表示用该符号后面的正则去匹配路径，不区分大小写。跟<code>~</code>优先级都比较低，如有多个 location 的正则能匹配的话，则使用正则表达式最长的那个；</li></ol> <p>如果 uri 包含正则表达式，则必须要有 <code>~</code>或 <code>~*</code> 标志</p></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2022/4/1 12:35:27</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/reco-blog/docs/deploy/bu-shu-xiang-mu.html">
+            项目部署_宝塔面板(待完善)
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-cb1513f6><li class="level-2" data-v-cb1513f6><a href="/reco-blog/docs/deploy/nginx.html#基本配置" class="sidebar-link reco-side-基本配置" data-v-cb1513f6>基本配置</a></li><li class="level-2" data-v-cb1513f6><a href="/reco-blog/docs/deploy/nginx.html#全局变量" class="sidebar-link reco-side-全局变量" data-v-cb1513f6>全局变量</a></li><li class="level-2" data-v-cb1513f6><a href="/reco-blog/docs/deploy/nginx.html#反向代理-解决跨域的一种流行方案" class="sidebar-link reco-side-反向代理-解决跨域的一种流行方案" data-v-cb1513f6>反向代理(解决跨域的一种流行方案)</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 stay or life
+    </div> <div class="operation" style="right:90px;bottom:40px;display:none;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:none;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><APlayer audio="" fixed="true" mini="true" autoplay="autoplay" theme="#f9bcdd" loop="loop" order="random" preload="auto" volume="0.3" mutex="true" lrc-type="0" list-folded="true" list-max-height="250" storage-name="vuepress-plugin-meting" id="aplayer-fixed"></APlayer></div></div>
+    <script src="/reco-blog/assets/js/app.26830249.js" defer></script><script src="/reco-blog/assets/js/3.844ca5e3.js" defer></script><script src="/reco-blog/assets/js/1.9a26b4f5.js" defer></script><script src="/reco-blog/assets/js/26.2a3b186f.js" defer></script>
+  </body>
+</html>
