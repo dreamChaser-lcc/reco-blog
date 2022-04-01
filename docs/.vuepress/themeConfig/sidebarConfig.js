@@ -69,7 +69,7 @@ const sidebarConfig = {
       children: ["Git命令"],
     },
   ],
-  "/docs/Css/": [
+  "/docs/CSS/": [
     {
       title: "其他",
       collapsable: false,
