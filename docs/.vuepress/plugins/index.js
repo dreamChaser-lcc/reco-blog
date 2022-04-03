@@ -24,6 +24,10 @@ module.exports = {
         separator: "-", // Separator of the slug, default: '-'
       },
     ],
+    // 加载页
+    [
+      "@vuepress-reco/vuepress-plugin-loading-page"
+    ],
     //live2d看板娘
     [
       "@vuepress-reco/vuepress-plugin-kan-ban-niang",
