@@ -244,6 +244,6 @@ Please commit your changes or stash them before you merge
 ```bash
 git stash   // 将已修改未提交的代码隐藏 
 git pull    // 更新远程分支最新代码
-git pop     // 再把已修改分支代码放出,并和合并冲突错误
+git stash pop     // 再把已修改分支代码放出,并和合并冲突错误
 
 ```
