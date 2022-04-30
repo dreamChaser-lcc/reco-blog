@@ -1,10 +1,70 @@
 ---
-title: Nginx配置(待完善)
+title: Nginx入门学习
 categories:
   - 部署
 tags:
   - nginx
 ---
+
+## 脑图
+![20220430123719](https://cdn.jsdelivr.net/gh/dreamChaser-lcc/typora-cloudImages/blog/nginx/20220430123719.png)
+
+## 正向/反向代理
+- 正向代理：例如vpn,当访问外网，无法直接访问到外网主机ip时，访问外网url时，请求发送到正向代理的服务器上，再进行到外网
+- 反向代理：例如百度，输入url,www.baidu.com,请求发送到反向代理服务器，再转发到各个不知名的服务器上
+:::tip
+ 区别1：
+ - 正向代理是`已知请求的实际服务器`，如访问www.google.com，真实请求是发送到google.com(当然google也可以再进行反向代理)
+ - 反向代理是`已知反向代理服务器`，如访问www.baidu.com，真实请求并不知道实际访问的是哪台主机
+  
+ 区别2：
+ - 正向代理是解决请求`客户端到服务器`的问题，反向代理是解决` 服务器到服务器` 的问题（比如负载均衡）
+:::
+
+## 负载均衡
+
+```conf
+http {
+    # 负载均衡的配置 （这边采用的是比重的方式）
+    upstream webname {
+      server 192.168.0.1:8080 weight=1;
+      server 192.168.0.2:8080 weight=2;
+    }
+    # 当访问/test/时，反向代理到负载均衡的webname配置上
+    location = /test/ {
+      pass_proxy http://webname/test/;
+    }
+}
+```
+上面的配置当请求/test/时，三次请求中，先一次请求192.168.0.1，接下来两次请求到了192.168.0.2，逐步循环
+:::tip
+  负载均衡的模式：
+  - 轮询,
+  - weight ( 比重，上面的例子)
+  - ip_hash
+  - url_hash
+  等
+:::
+
+## 动静分离
+```
+  #静态资源加载
+  location ~ .*\.(html|jpg|png|css|js)$ {
+    root http://assets/;
+  }
+  #动态资源加载
+  location ~ .*\.(jsp|do) {
+    proxy_pass http://dynamic;
+
+    # 请求头的配置
+    proxy_set_header Host $host:$server_port;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  }
+```
+:::tip
+  动静分离主要是减少服务器计算压力，静态在不需要复杂计算的目录直接返回，动态通过服务器计算返回，减少不必要的服务器开支，另外可以Nginx的缓存
+:::
 
 ## 基本配置
 
@@ -104,3 +164,33 @@ location 后面的指令语法
 如果 uri 包含正则表达式，则必须要有 `~`或 `~*` 标志
 
 :::
+
+## FQA
+
+### location 配置中root和alias的区别
+```conf
+
+http {
+  # root 配置资源根目录，匹配路径 /root/
+  location ~ /root/ {
+    # root配置路径
+    root /www/asset/;
+  } 
+  # alias 别名,匹配路径 /alias/
+  location ~ /alias/ {
+    # alias配置路径,句末一定要加上 /
+    alias /www/asset/root/;
+  }
+}
+#上面配置：
+#  当访问 www.test.com/root/img.jpg和www.test.com/alias/img.jpg时
+#  实际资源路径都是 /www/asset/root/img.jpg
+#  返回的是同样的结果，都是 /www/asset/root/img.jpg 这个文件
+```
+:::tip
+  所以，可以看出:
+  - 当用root时，实际资源路径 是 配置路径的后面`加上`匹配路径，
+  - 而当使用alias时，实际资源路径 是 匹配路径`替换`成配置路径的结果
+:::
+### 语法注意点
+句末配置都需要加分号，避免配置错误
