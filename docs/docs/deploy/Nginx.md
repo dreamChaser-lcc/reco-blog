@@ -34,7 +34,7 @@ tags:
 
 ## 负载均衡
 
-```conf
+```
 http {
     # 负载均衡的配置 （这边采用的是比重的方式）
     upstream webname {
@@ -184,7 +184,7 @@ location 后面的指令语法
 
 ### location 配置中 root 和 alias 的区别
 
-```conf
+```
 
 http {
   # root 配置资源根目录，匹配路径 /root/

@@ -13,7 +13,7 @@ categories:
 
 ## 安装
 
-```CLI
+```
   npm install vuex@next --save
 ```
 
