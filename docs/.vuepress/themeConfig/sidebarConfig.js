@@ -66,7 +66,7 @@ const sidebarConfig = {
     {
       title: "其他",
       collapsable: false,
-      children: ["Git命令"],
+      children: ["git命令"],
     },
   ],
   "/docs/cssMemo/": [
@@ -76,12 +76,12 @@ const sidebarConfig = {
       children: ["css3动画"],
     },
   ],
-  // "/docs/deploy/": [
-  //   {
-  //     title: "v服务器部署",
-  //     collapsable: false,
-  //     children: ["nginx", "v部署项目"],
-  //   },
-  // ],
+  "/docs/deploy/": [
+    {
+      title: "服务器部署",
+      collapsable: false,
+      children: ["nginx", "部署项目"],
+    },
+  ],
 };
 module.exports = sidebarConfig;
