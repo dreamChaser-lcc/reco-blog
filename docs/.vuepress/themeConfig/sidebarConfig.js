@@ -1,39 +1,39 @@
 const sidebarConfig = {
   "/docs/theme-reco/": ["theme", "api", "plugin"],
-  "/docs/vuepress/": [
-    {
-      title: "vuepress-reco",
-      collapsable: false,
-      children: [
-        {
-          title: "项目搭建",
-          path: "./",
-        },
-        {
-          title: "侧边栏配置",
-          path: "侧边栏配置",
-        },
-        {
-          title: "Markdown",
-          path: "Markdown",
-        },
-        "博客部署",
-        "图床",
-      ],
-    },
-    {
-      title: "多级侧边栏",
-      collapsable: false,
-      children: [
-        "多级侧边栏/一级侧边栏",
-        {
-          title: "二级目录",
-          collapsable: false,
-          children: ["多级侧边栏/二级目录/二级侧边栏"],
-        },
-      ],
-    },
-  ],
+  // "/docs/vuepress/": [
+  //   {
+  //     title: "vuepress-reco",
+  //     collapsable: false,
+  //     children: [
+  //       {
+  //         title: "项目搭建",
+  //         path: "./",
+  //       },
+  //       {
+  //         title: "侧边栏配置",
+  //         path: "侧边栏配置",
+  //       },
+  //       {
+  //         title: "Markdown",
+  //         path: "Markdown",
+  //       },
+  //       "博客部署",
+  //       "图床",
+  //     ],
+  //   },
+  //   {
+  //     title: "多级侧边栏",
+  //     collapsable: false,
+  //     children: [
+  //       "多级侧边栏/一级侧边栏",
+  //       {
+  //         title: "二级目录",
+  //         collapsable: false,
+  //         children: ["多级侧边栏/二级目录/二级侧边栏"],
+  //       },
+  //     ],
+  //   },
+  // ],
   "/docs/React/": [
     {
       title: "React文档",
@@ -71,17 +71,17 @@ const sidebarConfig = {
   ],
   "/docs/cssMemo/": [
     {
-      title: "其他",
+      title: "css",
       collapsable: false,
-      children: ["CSS3动画"],
+      children: ["css3动画"],
     },
   ],
-  "/docs/deploy/": [
-    {
-      title: "服务器部署",
-      collapsable: false,
-      children: ["Nginx", "部署项目"],
-    },
-  ],
+  // "/docs/deploy/": [
+  //   {
+  //     title: "v服务器部署",
+  //     collapsable: false,
+  //     children: ["nginx", "v部署项目"],
+  //   },
+  // ],
 };
 module.exports = sidebarConfig;
