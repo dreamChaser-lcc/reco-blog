@@ -21,21 +21,21 @@ const sidebarConfig = {
         "图床",
       ],
     },
-    {
-      title: "多级侧边栏",
-      collapsable: false,
-      children: [
-        {
-          title:'一级侧边栏',
-          path:'多级侧边栏/一级侧边栏'
-        },
-        {
-          title: "二级目录",
-          collapsable: false,
-          children: ["./二级目录/二级侧边栏"],
-        },
-      ],
-    },
+    // {
+    //   title: "多级侧边栏",
+    //   collapsable: false,
+    //   children: [
+    //     {
+    //       title:'一级侧边栏',
+    //       path:'多级侧边栏/一级侧边栏'
+    //     },
+    //     {
+    //       title: "二级目录",
+    //       collapsable: false,
+    //       children: ["多级侧边栏/二级目录/二级侧边栏"],
+    //     },
+    //   ],
+    // },
   ],
   "/docs/React/": [
     {
