@@ -1,5 +1,5 @@
 const sidebarConfig = {
-  "/docs/theme-reco/": ["theme", "api", "plugin"],
+  // "/docs/theme-reco/": ["theme", "api", "plugin"],
   "/docs/vuepress/": [
     {
       title: "vuepress-reco",
@@ -25,11 +25,14 @@ const sidebarConfig = {
       title: "多级侧边栏",
       collapsable: false,
       children: [
-        "多级侧边栏/一级侧边栏",
+        {
+          title:'一级侧边栏',
+          path:'多级侧边栏/一级侧边栏'
+        },
         {
           title: "二级目录",
           collapsable: false,
-          children: ["多级侧边栏/二级目录/二级侧边栏"],
+          children: ["./二级目录/二级侧边栏"],
         },
       ],
     },

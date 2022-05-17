@@ -1,4 +1,4 @@
-// const sidebarConfig = require("./sidebarConfig");
+const sidebarConfig = require("./sidebarConfig");
 
 module.exports = {
   themeConfig: {
@@ -72,7 +72,7 @@ module.exports = {
     subSidebar: "auto",
     sidebarDepth: 3, // 侧边栏深度，默认是2级
     // 侧边栏配置
-    sidebar: [],
+    sidebar: sidebarConfig,
     // 留言板
     valineConfig: {
       appId: "wMhYUMsTRmok697Y2P2C8XHf-gzGzoHsz", // your appId

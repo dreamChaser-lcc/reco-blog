@@ -11,16 +11,17 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
-    "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
-    "mddir": "^1.1.1",
+    "@vuepress-reco/vuepress-plugin-kan-ban-niang": "1.0.5",
+    "mddir": "1.1.1",
     "vuepress": "1.8.2",
-    "vuepress-plugin-meting": "^0.3.1",
-    "vuepress-plugin-permalink-pinyin": "^1.0.0",
+    "vuepress-plugin-autobar": "github:boboidream/vuepress-bar",
+    "vuepress-plugin-meting": "0.3.1",
+    "vuepress-plugin-permalink-pinyin": "1.0.0",
     "vuepress-theme-reco": "1.6.10"
   },
   "description": "Personal growth and learning records",
   "dependencies": {
-    "@vuepress-reco/vuepress-plugin-loading-page": "^1.6.0",
-    "vuepress-plugin-nuggets-style-copy": "^1.0.3"
+    "@vuepress-reco/vuepress-plugin-loading-page": "1.6.0",
+    "vuepress-plugin-nuggets-style-copy": "1.0.3"
   }
 }

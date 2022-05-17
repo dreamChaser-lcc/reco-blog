@@ -24,10 +24,9 @@ module.exports = {
         separator: "-", // Separator of the slug, default: '-'
       },
     ],
+    // ["autobar"],
     // 加载页
-    [
-      "@vuepress-reco/vuepress-plugin-loading-page"
-    ],
+    ["@vuepress-reco/vuepress-plugin-loading-page"],
     //live2d看板娘
     [
       "@vuepress-reco/vuepress-plugin-kan-ban-niang",
@@ -71,6 +70,5 @@ module.exports = {
         },
       },
     ],
-
   ],
 };
