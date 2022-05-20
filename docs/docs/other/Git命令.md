@@ -193,7 +193,13 @@ git push
 
 ## git 版本回退代码
 
-- 为了不覆盖原始代码,一般创建新分支回退
+:::tip
+ **revert 和 res**
+  - git reset 回退代码会将之前的提交记录都覆盖了
+  - git revert 在原来提交记录上新增加一条提交记录（推荐）
+:::
+## 通过 reset 命令
+- 为了不覆盖原始代码,一般创建新分支回退(或者revert 保留原始commit 记录)
 
 ```bash
 git checkout -b xxx  //同步当前分支所有内容到xxx分支
@@ -213,6 +219,10 @@ git checkout -b xxx  //同步当前分支所有内容到xxx分支
 
 ```bash
   git reset head   //如上图
+  
+  or
+
+  git reset --hard head 
 ```
 
 - 强力上传到远程仓库（上传后回退之间的记录都会清除）

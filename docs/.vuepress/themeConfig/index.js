@@ -47,6 +47,10 @@ module.exports = {
             link: "/docs/cssMemo/CSS3动画",
           },
           {
+            text: "Git",
+            link: "/docs/other/Git命令",
+          },
+          {
             text: "服务器部署",
             link: "/docs/deploy/Nginx",
           },
