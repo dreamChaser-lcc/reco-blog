@@ -1,0 +1,39 @@
+#远程同步文件到腾讯云
+name: Rsync to Server
+
+on:
+  push:
+    branches:
+      - release
+
+# 任务
+jobs:
+  build-and-deploy:
+    # 服务器环境：最新版 Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      # 拉取代码
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      # 生成静态文件，打包
+      - name: Build
+        run: npm install && npm run docs:build
+      # 查看打包环境的依赖
+      # - name: view dependence Version
+      # run: npm list
+
+      # 同步文件到服务器
+      - name: rsync to server
+        uses: easingthemes/ssh-deploy # 使用的action
+        env:
+          REMOTE_USER: ${{secrets.SERVER_USER}} # 服务器用户名
+          REMOTE_HOST: ${{secrets.SERVER_HOST}} # 目标地址(服务器地址,域名|IP地址) 
+          REMOTE_POST: 22 
+          SSH_PRIVATE_KEY: ${{secrets.SERVER_SSH_KEY}} # 服务器密钥 SSH_KEY
+          SOURCE: ${{secrets.ORIGIN_SOURCE_URL}} # 需要同步源文件目录,以根目录为绝对路径 例如：'docs/.vuepress/dist'
+          TARGET: ${{secrets.SERVER_TARGET_URL}} # 同步到服务器的目标文件目录 例如：'/www/wwwroot/blog'
+          ARGS: "-avz --delete" # 同步文件前，清空目标目录 (linux命令)
+
