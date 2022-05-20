@@ -27,7 +27,7 @@ jobs:
 
       # 同步文件到服务器
       - name: rsync to server
-        uses: easingthemes/ssh-deploy # 使用的action
+        uses: easingthemes/ssh-deploy@v2.2.11 # 使用的action
         env:
           REMOTE_USER: ${{secrets.SERVER_USER}} # 服务器用户名
           REMOTE_HOST: ${{secrets.SERVER_HOST}} # 目标地址(服务器地址,域名|IP地址) 
