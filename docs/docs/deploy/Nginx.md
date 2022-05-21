@@ -20,7 +20,7 @@ tags:
 
 ## 正向/反向代理
 
-- 正向代理：例如 vpn,当访问外网，无法直接访问到外网主机 ip 时，访问外网 url 时，请求发送到正向代理的服务器上，再进行到外网
+- 正向代理：例如 VPN_Proxy,当访问墙外服务器，无法直接访问到墙外服务器主机 ip 时，访问墙外服务器 url 时，请求发送到正向代理的服务器上，再进行到墙外服务器
 - 反向代理：例如百度，输入 url,www.baidu.com,请求发送到反向代理服务器，再转发到各个不知名的服务器上
   :::tip
   区别 1：
@@ -156,7 +156,7 @@ http {   # 配置使用最频繁的部分，代理、缓存、日志定义等绝
 ```nginx
 server {
   listen 9001;  # 监听端口
-  server_name myService;  # 外网访问服务器名(域名)
+  server_name myService;  # 墙外服务器访问服务器名(域名)
 
   location ~ /admin/ {    # 当访问 url 含有/admin/的接口转发到 http://127.0.0.1:3000
     proxy_pass http://127.0.0.1:3000; # 例如访问 myService/admin/getPermission
