@@ -2,8 +2,11 @@ const sidebarConfig = require("./sidebarConfig");
 
 module.exports = {
   themeConfig: {
+    // jsdelivrUrl:
+    //   "https://cdn.jsdelivr.net/gh/dreamChaser-lcc/typora-cloudImages/blog/",
+    // 变量名应是rawUrl，为大面积替换md中的变量名，暂不更改
     jsdelivrUrl:
-      "https://cdn.jsdelivr.net/gh/dreamChaser-lcc/typora-cloudImages/blog/",
+      "https://raw.staticdn.net/dreamChaser-lcc/typora-cloudImages/master/blog/",
     locales: {
       "/": {
         pagation: {
