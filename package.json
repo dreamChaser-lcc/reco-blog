@@ -14,7 +14,6 @@
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "1.0.5",
     "mddir": "1.1.1",
     "vuepress": "1.8.2",
-    "vuepress-plugin-autobar": "github:boboidream/vuepress-bar",
     "vuepress-plugin-meting": "0.3.1",
     "vuepress-plugin-permalink-pinyin": "1.0.0",
     "vuepress-theme-reco": "1.6.10"
