@@ -1,7 +1,8 @@
 ---
 home: true
 # heroText: 春华秋实
-tagline: 生活不是电影，没有那么多的不期而遇
+tagline: 窗外的风依旧在吹着. . .
+# tagline: 生活不是电影，没有那么多的不期而遇
 # tagline: 没有真正努力过，不该轻易输给懒惰
 # tagline: 积硅步以至千里,积小流以成江海
 # heroImage: /hero.png

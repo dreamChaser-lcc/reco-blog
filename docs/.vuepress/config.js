@@ -2,7 +2,7 @@ const { themeConfig } = require("./themeConfig");
 const { plugins } = require("./plugins");
 
 module.exports = {
-  title: "stay or life",
+  title: "Desire",
   description: "Personal growth and learning records",
   dest: "docs/.vuepress/dist",
   base: "/reco-blog/",

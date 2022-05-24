@@ -4,7 +4,7 @@ categories:
 - Css3
 ---
 
-## 过渡动画Transtion
+## 过渡动画Transition
 | 值  | 描述 |
 | --- | ---- |
 |property|过渡属性 `all|color|other property` |
