@@ -22,6 +22,12 @@ module.exports = {
         content: "width=device-width,initial-scale=1,user-scalable=no",
       },
     ],
+    [
+      "script",
+      {
+        src: "/js/danceText.js",
+      },
+    ],
   ],
   locales: {
     "/": {
