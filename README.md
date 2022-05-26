@@ -22,7 +22,7 @@ publish: false
 - 摘要2
 - 摘要3
 
-![1207071](https://cdn.jsdelivr.net/gh/dreamChaser-lcc/typora-cloudImages/blog/wallpaper/1207071.jpg)
+![1207071](https://raw.staticdn.net/dreamChaser-lcc/typora-cloudImages/master/blog/wallpaper/1207071.jpg)
 
 <!-- more -->
 

@@ -83,7 +83,7 @@ const sidebarConfig = {
     {
       title: "服务器部署",
       collapsable: false,
-      children: ["Nginx", "部署项目",'自动化部署'],
+      children: [ "部署项目","Nginx",'自动化部署'],
     },
   ],
 };

@@ -16,7 +16,7 @@ tags:
 
 ## 脑图
 
-![20220430123719](https://cdn.jsdelivr.net/gh/dreamChaser-lcc/typora-cloudImages/blog/nginx/20220430123719.png)
+![20220430123719](https://raw.staticdn.net/dreamChaser-lcc/typora-cloudImages/master/blog/nginx/20220430123719.png)
 
 ## 正向/反向代理
 
