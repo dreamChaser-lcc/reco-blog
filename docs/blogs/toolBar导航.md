@@ -21,6 +21,7 @@ tags:
 
 <Tool-CardsLayout>
   <template slot= 'toolList'>
+     <Tool-Card title="logo素材" descripte='在线设计logo' icon="" url='https://www.designevo.com/logo-maker/'/>
      <Tool-Card title="favicon" descripte='在线png格式转换favicon图标' icon="tool-icon/20220215161408.png" url=' https://tool.lu/favicon/'/>
     <Tool-Card title="bgremover" descripte='智能抠图，去除背景' icon="tool-icon/20220215161540.png" url='https://www.aigei.com/bgremover'/>
     <Tool-Card title="mycolor-space" descripte='在线生成渐变色' icon="tool-icon/20220228164022.png" url='https://mycolor.space/'/>

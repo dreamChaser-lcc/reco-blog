@@ -2,7 +2,7 @@ const { themeConfig } = require("./themeConfig");
 const { plugins } = require("./plugins");
 
 module.exports = {
-  title: "stay or life",
+  title: "Desire",
   description: "Personal growth and learning records",
   dest: "docs/.vuepress/dist",
   base: "/reco-blog/",
@@ -20,6 +20,12 @@ module.exports = {
       {
         name: "viewport",
         content: "width=device-width,initial-scale=1,user-scalable=no",
+      },
+    ],
+    [
+      "script",
+      {
+        src: "/js/danceText.js",
       },
     ],
   ],
