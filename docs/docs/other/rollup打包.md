@@ -177,7 +177,6 @@ include很重要,若不配置,将全局使用配置
 ```
 :::
 4. 配置.babelrc文件
-.babelrc
 ```json
 {
   "presets": [
@@ -196,7 +195,7 @@ include很重要,若不配置,将全局使用配置
 ```
 
 
-5. 配置package.json文件
+1. 配置package.json文件
 :::details 查看 package.json
 ```json {20,22,27,33}
 {
@@ -278,7 +277,7 @@ include很重要,若不配置,将全局使用配置
     "build:esm": "yarn run clean && cross-env MODE_ENV=esm rollup -c ",
     "build:dts": "yarn run clean && cross-env MODE_ENV=dts rollup -c ",
     "clean": "rimraf ./dist/"
-  },
+  }
 ```
 
 
