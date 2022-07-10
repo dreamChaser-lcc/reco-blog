@@ -23,7 +23,7 @@ tags:
 ```
 2. 根目录下新建 rollup.config.js
 :::details 查看rollup.config.js
-```js {69,72,90}
+```javascript {69,72,90}
 import * as path from "path";
 import * as fs from "fs";
 
