@@ -9,6 +9,7 @@ tags:
 # keys:
 #  - '123456'
 # publish: false
+sticky: 1
 ---
 
 ## 安装项目

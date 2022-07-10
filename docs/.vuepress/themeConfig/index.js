@@ -33,10 +33,10 @@ module.exports = {
         text: "文档",
         icon: "reco-message",
         items: [
-          {
-            text: "vuepress-reco",
-            link: "/docs/vuepress/",
-          },
+          // {
+          //   text: "vuepress-reco",
+          //   link: "/docs/vuepress/",
+          // },
           {
             text: "React文档",
             link: "/docs/React/",
@@ -46,16 +46,16 @@ module.exports = {
             link: "/docs/Vue/vue3.0知识点",
           },
           {
-            text: "CSS",
-            link: "/docs/cssMemo/CSS3动画",
-          },
-          {
-            text: "Git",
-            link: "/docs/other/Git命令",
+            text: "前端工程化",
+            link: "/docs/other/npmjs",
           },
           {
             text: "服务器部署",
             link: "/docs/deploy/Nginx",
+          },
+          {
+            text: "一些基础知识",
+            link: "/docs/cssMemo/CSS3动画",
           },
         ],
       },

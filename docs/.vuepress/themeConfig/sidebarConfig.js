@@ -65,11 +65,18 @@ const sidebarConfig = {
       children: ["vue3.0知识点", "vuex 4.x", "vue-router", "vite学习"],
     },
   ],
+  "/docs/deploy/": [
+    {
+      title: "服务器部署",
+      collapsable: false,
+      children: [ "部署项目","Nginx",'自动化部署'],
+    },
+  ],
   "/docs/other/": [
     {
-      title: "其他",
+      title: "前端工程化",
       collapsable: false,
-      children: ["Git命令"],
+      children: ["npmjs","Git命令"],
     },
   ],
   "/docs/cssMemo/": [
@@ -77,13 +84,6 @@ const sidebarConfig = {
       title: "css",
       collapsable: false,
       children: ["CSS3动画"],
-    },
-  ],
-  "/docs/deploy/": [
-    {
-      title: "服务器部署",
-      collapsable: false,
-      children: [ "部署项目","Nginx",'自动化部署'],
     },
   ],
 };
