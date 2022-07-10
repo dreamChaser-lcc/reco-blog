@@ -81,9 +81,9 @@ const sidebarConfig = {
   ],
   "/docs/cssMemo/": [
     {
-      title: "css",
+      title: "其他",
       collapsable: false,
-      children: ["CSS3动画"],
+      children: ["CSS3动画",'Canvas'],
     },
   ],
 };
