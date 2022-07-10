@@ -76,7 +76,7 @@ const sidebarConfig = {
     {
       title: "前端工程化",
       collapsable: false,
-      children: ["npmjs","Git命令"],
+      children: ["npmjs","rollup打包","Git命令"],
     },
   ],
   "/docs/cssMemo/": [
